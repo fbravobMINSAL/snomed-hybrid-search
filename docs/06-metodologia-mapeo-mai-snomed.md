@@ -30,6 +30,29 @@ Esta cardinalidad describe el producto de este proyecto. No implica que los conc
 sinónimos entre sí ni que el código MAI tenga exactamente el mismo significado clínico. Tampoco debe
 interpretarse automáticamente como una equivalencia bidireccional o una regla de facturación.
 
+### Marco de referencia SNOMED CT
+
+El desarrollo, validación y mantenimiento del mapa aplicará las reglas y buenas prácticas del
+[SNOMED CT Mapping Guide](https://docs.snomed.org/snomed-ct-practical-guides/snomed-ct-mapping-guide)
+publicado por SNOMED International, en todo aquello que sea pertinente para la dirección
+**SNOMED CT → MAI** y para el caso de uso definido en este proyecto.
+
+Su aplicación considera, como mínimo:
+
+- identificar claramente los sistemas de origen y destino, su dirección y sus versiones;
+- documentar propósito, alcance, usuarios previstos, preprocesamiento, herramientas y reglas;
+- revisar calidad, duplicados, valores nulos, abreviaturas y ambigüedades antes de mapear;
+- buscar correspondencias exactas y distinguir explícitamente relaciones exactas, más amplias, más
+  específicas y decisiones **sin mapeo**;
+- registrar cada decisión, su justificación, autoría, fecha y evidencia;
+- efectuar revisión clínica-terminológica independiente y resolver desacuerdos por consenso;
+- comprobar que los conceptos SNOMED CT estén activos en la edición declarada;
+- definir métricas de aceptación, auditoría, gestión de riesgos y mantenimiento periódico;
+- no invertir automáticamente el mapa sin una validación separada.
+
+La versión o fecha de consulta del Mapping Guide deberá registrarse en cada liberación metodológica,
+porque la publicación oficial puede actualizarse.
+
 ## 2. Selección de las prestaciones MAI
 
 Como primera etapa, se realizó una consulta a los Registros Estadísticos Mensuales (REM) para
@@ -176,4 +199,5 @@ Para cerrar la primera versión formal de la metodología se debe incorporar:
 
 | Versión | Cambio |
 |---|---|
+| 0.2 | Se adopta el SNOMED CT Mapping Guide como marco para desarrollo, control de calidad y mantenimiento. |
 | 0.1 | Se documenta la selección inicial de 100 prestaciones desde REM y la cardinalidad N SNOMED CT → 1 MAI agrupador. |

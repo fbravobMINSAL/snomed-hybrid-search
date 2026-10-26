@@ -23,7 +23,8 @@ retrieve *Myocardial infarction* even though they share no lexical overlap.
 - [05-guia-instalacion-y-uso-es.md](05-guia-instalacion-y-uso-es.md) — guía operativa en español:
   instalación local, RF2 inglés/español, OCL manualimagenes, revisión MAI → SNOMED CT y Excel.
 - [06-metodologia-mapeo-mai-snomed.md](06-metodologia-mapeo-mai-snomed.md) — metodología viva:
-  priorización de 100 prestaciones desde REM, desagregación y relación N SNOMED CT → 1 MAI.
+  priorización de 100 prestaciones desde REM, SNOMED CT Mapping Guide, desagregación y relación
+  N SNOMED CT → 1 MAI.
 - [07-metodologia-mapeo-loinc-mai.md](07-metodologia-mapeo-loinc-mai.md) — metodología de mapeo
   LOINC → MAI mediante el catálogo LABSIEL publicado en OCL institucional.
 - [01-paper-triplet-bert-semantic-search.md](01-paper-triplet-bert-semantic-search.md) — in-depth analysis of the reference paper (*Semantic Search for Large Scale Clinical Ontologies*, CSIRO).
