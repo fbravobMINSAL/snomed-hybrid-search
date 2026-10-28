@@ -53,10 +53,15 @@ Su aplicación considera, como mínimo:
 La versión o fecha de consulta del Mapping Guide deberá registrarse en cada liberación metodológica,
 porque la publicación oficial puede actualizarse.
 
-## 2. Selección de las prestaciones MAI
+## 2. Primera fase: selección de prestaciones MAI de imagenología
 
-Como primera etapa, se realizó una consulta a los Registros Estadísticos Mensuales (REM) para
-identificar las **100 prestaciones MAI con mayor número de prestaciones realizadas a nivel nacional**.
+La primera fase del proyecto comprenderá las **100 prestaciones MAI de imagenología más frecuentes a
+nivel nacional**, priorizadas según la fuente **Registros Estadísticos Mensuales (REM)**.
+
+Para definir este universo se realizó una consulta a REM y se ordenaron las prestaciones de
+imagenología por el número de prestaciones realizadas. Las categorías MAI distintas de imagenología y
+la ampliación más allá de las primeras 100 prestaciones quedan fuera de esta fase inicial y podrán
+abordarse en fases posteriores.
 
 La frecuencia nacional se utiliza como criterio de priorización: el trabajo comienza por las
 prestaciones de mayor uso y, por tanto, de mayor impacto potencial para interoperabilidad y análisis.
@@ -98,7 +103,7 @@ Para cada prestación se conserva al menos:
 
 ```mermaid
 flowchart TD
-    A[Consulta REM nacional] --> B[100 prestaciones MAI priorizadas]
+    A[Consulta REM nacional] --> B[100 prestaciones MAI de imagenología más frecuentes]
     B --> C[Revisión de código y descripción MAI]
     C --> D[Desagregación con OCL manualimagenes]
     D --> E{¿Existe ambigüedad clínica?}
@@ -199,5 +204,6 @@ Para cerrar la primera versión formal de la metodología se debe incorporar:
 
 | Versión | Cambio |
 |---|---|
+| 0.3 | Se delimita la primera fase a las 100 prestaciones MAI de imagenología más frecuentes según REM. |
 | 0.2 | Se adopta el SNOMED CT Mapping Guide como marco para desarrollo, control de calidad y mantenimiento. |
 | 0.1 | Se documenta la selección inicial de 100 prestaciones desde REM y la cardinalidad N SNOMED CT → 1 MAI agrupador. |
